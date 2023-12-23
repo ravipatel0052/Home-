@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background:burlywood;
+            overflow: hidden;
+        }
+        img{
+            height: 40%;
+        }
+        .p5{
+          position: absolute;
+          bottom: 5%;
+          color: gold;
+        }
+        .box1{
+          width: 110px;
+          height: 130px;
+          color: gold;
+          padding: 1%;
+          position: absolute;
+          left: 33%;
+          top: 30%;
+          text-align: center;
+        }
+        .box2{
+          width: 180px;
+          height: 100px;
+          color: gold;
+          position: absolute;
+          right: 5%;
+          top: 10%;
+          text-align: center;
+        }
+        .box3{
+          width: 130px;
+          height: 50px;
+          border-radius: 5%;
+          padding: 1%;
+          color: gold;
+          background: #38f67ea7;
+          position: absolute;
+          right: 5%;
+          bottom: 10%;
+          text-align: center;
+        }
+        
+      
+        
+        
+.card-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 800px;
+  height: 800px;
+  .card {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 650px;
+    height: 350px;
+    padding: 20px;
+    overflow: hidden;
+    
+    background:url(./image/bgc.jpg);
+    border-radius: 10px;
+    box-shadow: -2px 2px 0px 0px #202020,
+                -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+    z-index: 2;
+    transition: all 1s;
+    &:hover {
+      transform: translate(0px, -20px) rotateX(10deg) rotateZ(-20deg);;
+      box-shadow: -2px 1px 0px 0px #202020,
+                  -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  .card-container {
+    .card {
+      width: 500px;
+      height: 350px;
+      animation: hvr 4s infinite ease-in-out;
+      transition: none;
+    }
+  }
+
+  @keyframes hvr {
+    0% {
+      box-shadow: -2px 2px 0px 0px #202020,
+                  -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+      transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+    }
+    50% {
+      transform: translate(0px, -20px) rotateX(30deg) rotateZ(-20deg);;
+      box-shadow: -2px 1px 0px 0px #202020,
+                  -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: -2px 2px 0px 0px #202020,
+                  -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+      transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+    }
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+          <img src="./image/u.png" alt="">
+          <div>
+            <div class="box1"><h2 style="text-align: left;">शालु</h2><h4>संग</h4>
+            <h2 style="text-align:right;">सत्यम</h2></div>
+          </div>
+          <div>
+            <div class="box2">
+              <img style="width: 80%; height: 80%;" src="./image/s2.png" alt="">
+              <h4>रविवार,4 फरवरी 2024</h4>
+            </div>
+          </div>
+          <a href="https://ravipatel0052.github.io/card/">
+            <div class="box3"><h1>OPEN</h1></div>
+          </a>
+          <div class="p5">
+            <p><b><u>प्रेषक</u> :<br>ललई सिंह<br>सुरेन्द्र सिंह</b></p>
+            <p> कलवारी खुर्द , मरिहान,<br> मिर्जापुर (उ0 प्र0)</p>
+            <p> 9721101851,7800285437</p>
+        </div>
+        </div>
+      </div>
+</body>
+</html>
